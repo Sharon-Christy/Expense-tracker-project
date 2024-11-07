@@ -1,0 +1,159 @@
+/* General reset and styling for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the page takes up full height */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox layout for body to keep footer at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container to wrap the main content */
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Title of the page */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Balance Section */
+.balance {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.balance h3 {
+    font-size: 36px;
+    color: #4caf50; /* Green color for positive balance */
+}
+
+/* Income and Expense Section */
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.inc-exp-container div {
+    text-align: center;
+    width: 45%;
+}
+
+.inc-exp-container h3 {
+    font-size: 20px;
+}
+
+.money {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.plus {
+    color: #4caf50; /* Green for income */
+}
+
+.minus {
+    color: #f44336; /* Red for expense */
+}
+
+/* Transaction List */
+h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul.list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.list li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+ul.list li span {
+    font-size: 16px;
+}
+
+/* Add New Transaction Section */
+form {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-control small {
+    font-size: 12px;
+    color: #888;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling to stick at the bottom */
+footer {
+    text-align: center; /* Align text to the center */
+    padding: 10px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    color: #333;
+    position: absolute; /* Use absolute positioning to fix the footer at the bottom */
+    bottom: 0;
+  width:100%;
+}
